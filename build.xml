@@ -8,7 +8,6 @@
   		<property name="dist.dir" location="dist" />
   		<property name="docs.dir" location="docs" />
 		<property name="lib.dir" location="lib" />
-		<property name="images.dir" location="images" />
   	
   	<!--Create a classpath container which can be later used in the ant task-->
   		<path id="build.classpath">
@@ -51,7 +50,6 @@
 	<target name="jar" depends="compile">
 		<jar destfile="${dist.dir}\Java_Class.jar">
 			<fileset dir="${build.dir}" />
-			<fileset dir="${images.dir}" />
 			<manifest>
 				<attribute name="Main-Class" value="TestDrivers" />
 				<attribute name="SplashScreen-Image" value="HeadShot1.jpg" />
